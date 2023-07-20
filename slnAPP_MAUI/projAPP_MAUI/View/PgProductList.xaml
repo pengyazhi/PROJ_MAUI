@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projAPP_MAUI.View.PgProductList"
+             Title="PgProductList">
+    <VerticalStackLayout Background="#D1E9E9">
+        <Label 
+            Text="商品總覽列表"
+            FontSize="35"
+            HorizontalOptions="FillAndExpand"
+            Background="#4E878C"
+            TextColor="Wheat"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center" />
+        <CollectionView
+            x:Name="cvList"
+            SelectionChanged="cvList_SelectionChanged"
+            SelectionMode="Single"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                        <Label FontSize="25"
+                           TextColor="#4E878C"
+                           Text="商品名稱"/>
+                        <Label FontSize="18"
+                               TextColor="#93E5AB"
+                               Text="廠商名稱"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

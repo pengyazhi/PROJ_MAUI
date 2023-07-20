@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projAPP_MAUI.View.PgProductMangement"
+             Title="PgProductMangement">
+    <VerticalStackLayout Background="#D1E9E9" >
+        <Label 
+            Text="商品詳情"
+            FontSize="35"
+            HorizontalOptions="FillAndExpand"
+            Background="#4E878C"
+            TextColor="Wheat"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center" />
+        <StackLayout Orientation="Vertical" Margin="10" >
+            <Label
+            Text="商品名稱"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtName"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+            <Label
+            Text="廠商名稱"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtManufacturer"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+            <Label
+            Text="價格"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtPrice"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+            <Label
+            Text="日期"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtDate"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+            <Label
+            Text="最低出團人數"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtMin"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+            <Label
+            Text="額滿人數"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtMax"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+            <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
+                <ImageButton Source="first" HorizontalOptions="FillAndExpand" />
+                <ImageButton Source="previous" HorizontalOptions="FillAndExpand" />
+                <ImageButton Source="next" HorizontalOptions="FillAndExpand" />
+                <ImageButton Source="last" HorizontalOptions="FillAndExpand" />
+                <ImageButton Source="delete" HorizontalOptions="FillAndExpand" />
+                <ImageButton Source="menu" HorizontalOptions="FillAndExpand"  />
+                <ImageButton Source="home" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
