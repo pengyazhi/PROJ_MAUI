@@ -1,9 +1,11 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable\delete.png
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\clear.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\delete.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\first.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\last.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\menu.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\next.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\plus.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\previous.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\productlist.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\search.png

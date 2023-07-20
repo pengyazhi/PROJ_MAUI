@@ -49,12 +49,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\clear.png" />
 	  <None Remove="Resources\Images\delete.png" />
 	  <None Remove="Resources\Images\first.png" />
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\last.png" />
 	  <None Remove="Resources\Images\menu.png" />
 	  <None Remove="Resources\Images\next.png" />
+	  <None Remove="Resources\Images\plus.png" />
 	  <None Remove="Resources\Images\previous.png" />
 	  <None Remove="Resources\Images\productlist.png" />
 	  <None Remove="Resources\Images\search.png" />

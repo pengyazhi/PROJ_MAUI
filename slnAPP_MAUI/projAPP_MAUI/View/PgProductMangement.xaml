@@ -26,7 +26,7 @@
             FontSize="25"
             HorizontalOptions="Start"/>
             <Entry
-            x:Name="txtManufacturer"
+            x:Name="txtSupplier"
             FontSize="25"
             HorizontalOptions="FillAndExpand"/>
             <Label
@@ -61,14 +61,22 @@
             x:Name="txtMax"
             FontSize="25"
             HorizontalOptions="FillAndExpand"/>
-            <StackLayout Orientation="Horizontal" Margin="0,30,0,0">
-                <ImageButton Source="first" HorizontalOptions="FillAndExpand" />
-                <ImageButton Source="previous" HorizontalOptions="FillAndExpand" />
-                <ImageButton Source="next" HorizontalOptions="FillAndExpand" />
-                <ImageButton Source="last" HorizontalOptions="FillAndExpand" />
-                <ImageButton Source="delete" HorizontalOptions="FillAndExpand" />
-                <ImageButton Source="menu" HorizontalOptions="FillAndExpand"  />
-                <ImageButton Source="home" HorizontalOptions="FillAndExpand" />
+            <ImageButton Source="clear" Clicked="btnClear_Clicked"/>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="first" HorizontalOptions="FillAndExpand"/>
+                    <ImageButton Source="previous" HorizontalOptions="FillAndExpand" />
+                    <ImageButton Source="next" HorizontalOptions="FillAndExpand" />
+                    <ImageButton Source="last" HorizontalOptions="FillAndExpand" />
+                    <ImageButton Source="search" HorizontalOptions="FillAndExpand" />
+                    <ImageButton Source="menu" HorizontalOptions="FillAndExpand"  Clicked="btnList_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="End" Margin="5">
+                    <ImageButton Clicked="btnAdd_Clicked"  Source="plus" HorizontalOptions="End" />
+                    <ImageButton Source="delete" HorizontalOptions="End" Clicked="btnDelete_Clicked"/>
+                    <ImageButton Source="home" HorizontalOptions="End" />
+                </StackLayout>
+                
             </StackLayout>
         </StackLayout>
     </VerticalStackLayout>

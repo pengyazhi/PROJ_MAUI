@@ -25,6 +25,7 @@
             </Grid.RowDefinitions>
             <ImageButton Source="productlist" Clicked="btnProductList_Clicked"/>
             <ImageButton Source="setting" Grid.Column="1" Clicked="btnProductMangement_Clicked"/>
+            
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

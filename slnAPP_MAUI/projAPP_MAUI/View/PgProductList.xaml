@@ -23,10 +23,10 @@
                     <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
                         <Label FontSize="25"
                            TextColor="#4E878C"
-                           Text="商品名稱"/>
+                           Text="{Binding product}"/>
                         <Label FontSize="18"
                                TextColor="#93E5AB"
-                               Text="廠商名稱"/>
+                               Text="{Binding supplier}"/>
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
