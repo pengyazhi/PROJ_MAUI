@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Repos\\MAUIforProj\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj": {}
+    "C:\\Users\\yazhi\\Desktop\\TravelDate\\maui_for_proj\\proj_maui_v1\\PROJ_MAUI\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Repos\\MAUIforProj\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj": {
+    "C:\\Users\\yazhi\\Desktop\\TravelDate\\maui_for_proj\\proj_maui_v1\\PROJ_MAUI\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Repos\\MAUIforProj\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj",
+        "projectUniqueName": "C:\\Users\\yazhi\\Desktop\\TravelDate\\maui_for_proj\\proj_maui_v1\\PROJ_MAUI\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj",
         "projectName": "projAPP_MAUI",
-        "projectPath": "C:\\Users\\User\\Desktop\\Repos\\MAUIforProj\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Repos\\MAUIforProj\\slnAPP_MAUI\\projAPP_MAUI\\obj\\",
+        "projectPath": "C:\\Users\\yazhi\\Desktop\\TravelDate\\maui_for_proj\\proj_maui_v1\\PROJ_MAUI\\slnAPP_MAUI\\projAPP_MAUI\\projAPP_MAUI.csproj",
+        "packagesPath": "C:\\Users\\yazhi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yazhi\\Desktop\\TravelDate\\maui_for_proj\\proj_maui_v1\\PROJ_MAUI\\slnAPP_MAUI\\projAPP_MAUI\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yazhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

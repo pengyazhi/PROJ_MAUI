@@ -8,57 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projAPP_MAUI
-build_property.ProjectDir = C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\
+build_property.ProjectDir = C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/App.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/AppShell.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/MainPage.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/Resources/Styles/Colors.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/Resources/Styles/Styles.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgHome.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgHome.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgHome.xaml
 build_metadata.AdditionalFiles.TargetPath = View\PgHome.xaml
 build_metadata.AdditionalFiles.RelativePath = View\PgHome.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgProductList.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgProductList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgProductList.xaml
 build_metadata.AdditionalFiles.TargetPath = View\PgProductList.xaml
 build_metadata.AdditionalFiles.RelativePath = View\PgProductList.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgProductMangement.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgProductMangement.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgProductMangement.xaml
 build_metadata.AdditionalFiles.TargetPath = View\PgProductMangement.xaml
 build_metadata.AdditionalFiles.RelativePath = View\PgProductMangement.xaml
 
-[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgSearch.xaml]
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgSearch.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgSearch.xaml
 build_metadata.AdditionalFiles.TargetPath = View\PgSearch.xaml
