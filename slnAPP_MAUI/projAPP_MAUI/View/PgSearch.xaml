@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projAPP_MAUI.View.PgSearch"
+             Title="PgSearch">
+    <VerticalStackLayout Background="#D1E9E9">
+        <Label 
+            Text="搜尋"
+            FontSize="35"
+            HorizontalOptions="FillAndExpand"
+            Background="#4E878C"
+            TextColor="Wheat"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center"/>
+        <Label 
+            Text="商品名稱/廠商名稱/日期"
+             FontSize="25"
+            HorizontalOptions="Start"/>
+        <Entry
+            x:Name="txtNameAndDate"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+        <Label 
+            Text="價格"
+             FontSize="25"
+            HorizontalOptions="Start"/>
+        <Entry
+            x:Name="txtPrice"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"/>
+        <ImageButton 
+            Source="search"
+            Clicked="btnConfirm_Clicked"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

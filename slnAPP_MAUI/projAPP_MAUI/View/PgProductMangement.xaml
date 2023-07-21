@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:crm ="clr-namespace:projAPP_MAUI.ViewModels"
              x:Class="projAPP_MAUI.View.PgProductMangement"
              Title="PgProductMangement">
+    <ContentPage.BindingContext>
+        <crm:CProductViewModels/>
+    </ContentPage.BindingContext>
     <VerticalStackLayout Background="#D1E9E9" >
         <Label 
             Text="商品詳情"
@@ -20,7 +24,8 @@
             <Entry
             x:Name="txtName"
             FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.product,Mode=TwoWay}"/>
             <Label
             Text="廠商名稱"
             FontSize="25"
@@ -28,7 +33,8 @@
             <Entry
             x:Name="txtSupplier"
             FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.supplier,Mode=TwoWay}"/>
             <Label
             Text="價格"
             FontSize="25"
@@ -36,7 +42,8 @@
             <Entry
             x:Name="txtPrice"
             FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.price,Mode=TwoWay}"/>
             <Label
             Text="日期"
             FontSize="25"
@@ -44,7 +51,8 @@
             <Entry
             x:Name="txtDate"
             FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.date,Mode=TwoWay}"/>
             <Label
             Text="最低出團人數"
             FontSize="25"
@@ -52,7 +60,8 @@
             <Entry
             x:Name="txtMin"
             FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.min,Mode=TwoWay}"/>
             <Label
             Text="額滿人數"
             FontSize="25"
@@ -60,23 +69,23 @@
             <Entry
             x:Name="txtMax"
             FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.max,Mode=TwoWay}"/>
             <ImageButton Source="clear" Clicked="btnClear_Clicked"/>
             <StackLayout Orientation="Vertical">
                 <StackLayout Orientation="Horizontal" >
-                    <ImageButton Source="first" HorizontalOptions="FillAndExpand"/>
-                    <ImageButton Source="previous" HorizontalOptions="FillAndExpand" />
-                    <ImageButton Source="next" HorizontalOptions="FillAndExpand" />
-                    <ImageButton Source="last" HorizontalOptions="FillAndExpand" />
-                    <ImageButton Source="search" HorizontalOptions="FillAndExpand" />
+                    <ImageButton Source="first" HorizontalOptions="FillAndExpand" Clicked="btnFirst_Clicked"/>
+                    <ImageButton Source="previous" HorizontalOptions="FillAndExpand" Clicked="btnPrevious_Clicked_1"/>
+                    <ImageButton Source="next" HorizontalOptions="FillAndExpand" Clicked="btnNext_Clicked_2"/>
+                    <ImageButton Source="last" HorizontalOptions="FillAndExpand" Clicked="btnLast_Clicked_3"/>
+                    <ImageButton Source="search" HorizontalOptions="FillAndExpand" Clicked="btnSearch_Clicked_4"/>
                     <ImageButton Source="menu" HorizontalOptions="FillAndExpand"  Clicked="btnList_Clicked"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="End" Margin="5">
-                    <ImageButton Clicked="btnAdd_Clicked"  Source="plus" HorizontalOptions="End" />
+                    <ImageButton Source="plus" HorizontalOptions="End" Clicked="btnAdd_Clicked"  />
                     <ImageButton Source="delete" HorizontalOptions="End" Clicked="btnDelete_Clicked"/>
-                    <ImageButton Source="home" HorizontalOptions="End" />
+                    <ImageButton Source="home" HorizontalOptions="End" Clicked="btnHome_Clicked" />
                 </StackLayout>
-                
             </StackLayout>
         </StackLayout>
     </VerticalStackLayout>
