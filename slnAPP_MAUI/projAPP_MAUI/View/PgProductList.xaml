@@ -20,12 +20,12 @@
             VerticalOptions="FillAndExpand">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
-                        <Label FontSize="25"
-                           TextColor="#4E878C"
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Margin="5">
+                        <Label FontSize="23"
+                          TextColor="#155074"
                            Text="{Binding product}"/>
-                        <Label FontSize="18"
-                               TextColor="#93E5AB"
+                        <Label FontSize="18" 
+                               TextColor="#4E878C"
                                Text="{Binding supplier}"/>
                     </StackLayout>
                 </DataTemplate>

@@ -1,75 +1,105 @@
 ﻿using projAPP_MAUI.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace projAPP_MAUI.ViewModels
 {
-    public class CProductViewModels
+    public class CProductViewModels:INotifyPropertyChanged
     {
-        private List<CProducts>_lists = new List<CProducts>();
-        private int _postion =0;
-        private CProductViewModels()
+        
+        public CProductViewModels()
         {
             loadData();
         }
-        private void loadData()
+        //App app = Application.Current as App;
+        private List<CProducts> _lists = new List<CProducts>();
+        private int _postion = 0;
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void loadData()
         {
-            CProducts x = new CProducts();
-            x.流水號 = 1;
-            x.product = "蘭嶼｜三天兩夜自由行";
-            x.supplier = "可樂旅遊";
-            x.price = 4700;
-            x.date = "2023-09-15";
-            x.min = 0;
-            x.max = 20;
-            _lists.Add(x);
-            x = new CProducts();
-            x.流水號 = 2;
-            x.product = "台灣南投｜合歡山暗空公園觀星體驗";
-            x.supplier = "雄獅旅遊";
-            x.price = 3999;
-            x.date = "2023-10-10";
-            x.min = 10;
-            x.max = 30;
-            _lists.Add(x);
-            x = new CProducts();
-            x.流水號 = 3;
-            x.product = "花蓮鯉魚潭露營渡假村山水谷豪華露營";
-            x.supplier = "山富旅行";
-            x.price = 9000;
-            x.date = "2024-04-20";
-            x.min = 5;
-            x.max = 40;
-            _lists.Add(x);
+            int sn = Preferences.Default.Get("COUNT", 0);
+            if (sn == 0)
+                return;
+            List<CProducts> products = new List<CProducts>();
+            for (int i = 1; i <= sn; i++)
+            {
+                string KeyN = "N" + i;
+                string KeyS = "S" + i;
+                string KeyP = "P" + i;
+                string KeyD = "D" + i;
+                string KeyMin = "MIN" + i;
+                string KeyMax = "MAX" + i;
+                if (Preferences.Default.ContainsKey(KeyN))
+                {
+                    CProducts x = new CProducts();
+                    x.product = Preferences.Default.Get(KeyN, "");
+                    x.supplier = Preferences.Default.Get(KeyS, "");
+                    x.price = Convert.ToInt32(Preferences.Default.Get(KeyP, ""));
+                    x.date = Preferences.Default.Get(KeyD, "");
+                    x.min = Convert.ToInt32(Preferences.Default.Get(KeyMin, ""));
+                    x.max = Convert.ToInt32(Preferences.Default.Get(KeyMax, ""));
+                    x.流水號 = i;
+                    products.Add(x);
+                }
+            }
+            if (products.Count == 0)
+                return;
+            (Application.Current as App).allProdForList = products;
+            App app = Application.Current as App;
+            _lists = app.allProdForList;
         }
-        public void moveFirst()
+            
+
+            public void moveFirst()
         {
+            if (_lists.Count > 0) 
             _postion = 0;
+            PropertyChanged(this, new PropertyChangedEventArgs("current"));
         }
         public void movePrevious()
         {
-            _postion--;
-            if (_postion < 0)
-                _postion = 0;
+            if (_lists.Count > 0)
+            {
+                _postion--;
+                if (_postion < 0)
+                    _postion = 0;
+                PropertyChanged(this, new PropertyChangedEventArgs("current"));
+            }
+              
         }
         public void moveNext()
         {
-            _postion++;
-            if(_postion > _lists.Count-1)
-                _postion = _lists.Count-1;
+            if (_lists.Count > 0)
+            {
+                _postion++;
+                if (_postion > _lists.Count - 1)
+                    _postion = _lists.Count - 1;
+                PropertyChanged(this, new PropertyChangedEventArgs("current"));
+            }        
         }
         public void moveLast()
         {
-            _postion = _lists.Count - 1;
-
+            
+            if (_lists.Count > 0)
+            {
+                _postion = _lists.Count - 1;
+                PropertyChanged(this, new PropertyChangedEventArgs("current"));
+            }
         }
         public void moveTo(int to)
         {
-            _postion = to;
+            if (_lists.Count > 0)
+            {
+                _postion = to;
+                PropertyChanged(this, new PropertyChangedEventArgs("current"));
+            }
         }
+      
         public CProducts current
         {
             get { return _lists[_postion]; }
@@ -79,6 +109,23 @@ namespace projAPP_MAUI.ViewModels
         {
             get { return _lists; }
             set { _lists = value; }
+        }
+        internal object queryByKeyword(List<CKeywordViewModel> keywords)
+        {
+            for(int i = 0; i < _lists.Count; i++) 
+            {
+                string keyword = keywords[i].keyword;
+                if (_lists[i].product.ToUpper().Contains(keyword.ToUpper())
+                    || _lists[i].supplier.ToUpper().Contains(keyword.ToUpper())
+                    || _lists[i].date.ToUpper().Contains(keyword.ToUpper())
+                    || _lists[i].price.ToString().Contains(keywords[i].price.ToString()))
+                {
+                    moveTo(i);
+                    return _lists[i];
+                }
+            }
+            return null;
+          
         }
     }
 }
