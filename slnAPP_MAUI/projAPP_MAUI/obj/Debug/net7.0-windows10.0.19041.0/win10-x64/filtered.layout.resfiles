@@ -46,6 +46,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+beachforlogin.scale-100.jpg
 clear.scale-100.png
 delete.scale-100.png
 dotnet_bot.scale-100.png
@@ -53,12 +54,17 @@ dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+editor.scale-100.png
 first.scale-100.png
 home.scale-100.png
 last.scale-100.png
+loginback.scale-100.png
+loginbeach.scale-100.gif
+logout.scale-100.png
 menu.scale-100.png
 next.scale-100.png
 plus.scale-100.png
+plusred.scale-100.png
 previous.scale-100.png
 productlist.scale-100.png
 search.scale-100.png

@@ -50,6 +50,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgHome.x
 build_metadata.AdditionalFiles.TargetPath = View\PgHome.xaml
 build_metadata.AdditionalFiles.RelativePath = View\PgHome.xaml
 
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PgLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PgLogin.xaml
+
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgProductInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgProductInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PgProductInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PgProductInfo.xaml
+
 [C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgProductList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgProductList.xaml
@@ -67,3 +79,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgSearch.xaml
 build_metadata.AdditionalFiles.TargetPath = View\PgSearch.xaml
 build_metadata.AdditionalFiles.RelativePath = View\PgSearch.xaml
+
+[C:/Users/yazhi/Desktop/TravelDate/maui_for_proj/proj_maui_v1/PROJ_MAUI/slnAPP_MAUI/projAPP_MAUI/View/PgSettingEditor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = projAPP_MAUI.View.PgSettingEditor.xaml
+build_metadata.AdditionalFiles.TargetPath = View\PgSettingEditor.xaml
+build_metadata.AdditionalFiles.RelativePath = View\PgSettingEditor.xaml

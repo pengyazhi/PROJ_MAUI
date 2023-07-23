@@ -11,7 +11,6 @@ namespace projAPP_MAUI.ViewModels
 {
     public class CProductViewModels:INotifyPropertyChanged
     {
-        
         public CProductViewModels()
         {
             loadData();
@@ -53,8 +52,6 @@ namespace projAPP_MAUI.ViewModels
             App app = Application.Current as App;
             _lists = app.allProdForList;
         }
-            
-
             public void moveFirst()
         {
             if (_lists.Count > 0) 
@@ -91,11 +88,12 @@ namespace projAPP_MAUI.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs("current"));
             }
         }
-        public void moveTo(int to)
+        public void moveTo(int sn)
         {
             if (_lists.Count > 0)
             {
-                _postion = to;
+                App app = Application.Current as App;
+                _postion = app.allProdForList.FindIndex(n => n.流水號 == sn);
                 PropertyChanged(this, new PropertyChangedEventArgs("current"));
             }
         }
@@ -110,22 +108,19 @@ namespace projAPP_MAUI.ViewModels
             get { return _lists; }
             set { _lists = value; }
         }
-        internal object queryByKeyword(List<CKeywordViewModel> keywords)
+        internal object queryByKeyword(string keyword)
         {
             for(int i = 0; i < _lists.Count; i++) 
             {
-                string keyword = keywords[i].keyword;
                 if (_lists[i].product.ToUpper().Contains(keyword.ToUpper())
                     || _lists[i].supplier.ToUpper().Contains(keyword.ToUpper())
-                    || _lists[i].date.ToUpper().Contains(keyword.ToUpper())
-                    || _lists[i].price.ToString().Contains(keywords[i].price.ToString()))
+                    || _lists[i].date.ToUpper().Contains(keyword.ToUpper()))
                 {
-                    moveTo(i);
+                    moveTo(_lists[i].流水號);
                     return _lists[i];
                 }
             }
             return null;
-          
         }
     }
 }

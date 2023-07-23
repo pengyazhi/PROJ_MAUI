@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:crm ="clr-namespace:projAPP_MAUI.ViewModels"
+             x:Class="projAPP_MAUI.View.PgProductInfo"
+             Title="PgProductInfo">
+    
+    <ContentPage.BindingContext>
+        <crm:CProductViewModels/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Background="#D1E9E9" >
+        <Label 
+            Text="商品詳情"
+            Padding="5"
+            FontSize="35"
+            HorizontalOptions="FillAndExpand"
+            Background="#4E878C"
+            TextColor="Wheat"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center" />
+        <StackLayout Orientation="Vertical" Margin="10" >
+            <Label
+            Text="商品名稱"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtName"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.product,Mode=TwoWay}"/>
+            <Label
+            Text="廠商名稱"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtSupplier"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.supplier,Mode=TwoWay}"/>
+            <Label
+            Text="價格"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtPrice"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.price,Mode=TwoWay}"/>
+            <Label
+            Text="日期"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtDate"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.date,Mode=TwoWay}"/>
+            <Label
+            Text="最低出團人數"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtMin"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.min,Mode=TwoWay}"/>
+            <Label
+            Text="額滿人數"
+            FontSize="25"
+            HorizontalOptions="Start"/>
+            <Entry
+            x:Name="txtMax"
+            FontSize="25"
+            HorizontalOptions="FillAndExpand"
+                Text="{Binding current.max,Mode=TwoWay}"/>
+            
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" >
+                    <ImageButton Source="first" HorizontalOptions="FillAndExpand" Clicked="btnFirst_Clicked"/>
+                    <ImageButton Source="previous" HorizontalOptions="FillAndExpand" Clicked="btnPrevious_Clicked"/>
+                    <ImageButton Source="next" HorizontalOptions="FillAndExpand" Clicked="btnNext_Clicked"/>
+                    <ImageButton Source="last" HorizontalOptions="FillAndExpand" Clicked="btnLast_Clicked"/>
+                    <ImageButton Source="search" HorizontalOptions="FillAndExpand" Clicked="btnSearch_Clicked"/>
+                    <ImageButton Source="menu" HorizontalOptions="FillAndExpand" Clicked="btnList_Clicked"/>
+                    <ImageButton Source="home" HorizontalOptions="FillAndExpand" Clicked="btnHome_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

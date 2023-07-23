@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projAPP_MAUI.View.PgSettingEditor"
+             Title="PgSettingEditor">
+    <VerticalStackLayout Background="#D1E9E9" >
+        <Label 
+            Text="修改密碼"
+            Padding="5"
+            FontSize="35"
+            HorizontalOptions="FillAndExpand"
+            Background="#4E878C"
+            TextColor="Wheat"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center" />
+        <StackLayout Orientation="Vertical" Margin="10">
+            <Label
+                Text="請輸入舊密碼"
+                FontSize="25"
+                />
+            <Entry
+                x:Name="oldPassword"
+                FontSize="25"
+                HorizontalOptions="FillAndExpand"/>
+            <Label
+                Text="請輸入新密碼"
+                FontSize="25"
+                />
+            <Entry
+                x:Name="newPassword"
+                FontSize="25"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Margin="20,10,20,0">
+            <Button Text="確定" FontSize="20" Background="#019858" Clicked="btnConfirmPasswor_Clicked" HorizontalOptions="FillAndExpand" Margin="5"/>
+            <Button Text="取消" FontSize="20" Background="#007979" Clicked="btnCancel_Clicked" HorizontalOptions="FillAndExpand" Margin="5"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

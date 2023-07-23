@@ -6,32 +6,30 @@
     <VerticalStackLayout Background="#D1E9E9">
         <Label 
             Text="搜尋"
+            Padding="5"
             FontSize="35"
             HorizontalOptions="FillAndExpand"
             Background="#4E878C"
             TextColor="Wheat"
             VerticalTextAlignment="Center" 
             HorizontalTextAlignment="Center"/>
-        <Label 
+        <StackLayout Orientation="Vertical"
+                     Margin="5">
+            <Label 
             Text="商品名稱/廠商名稱/日期"
              FontSize="25"
             HorizontalOptions="Start"/>
-        <Entry
+            <Entry
             x:Name="txtNameAndDate"
             FontSize="25"
             HorizontalOptions="FillAndExpand"/>
-        <Label 
-            Text="價格"
-             FontSize="25"
-            HorizontalOptions="Start"/>
-        <Entry
-            x:Name="txtPrice"
-            FontSize="25"
-            HorizontalOptions="FillAndExpand"/>
-        <ImageButton 
+
+            <ImageButton 
             Source="search"
             Clicked="btnConfirm_Clicked"
             HorizontalOptions="Center"
             VerticalOptions="Center"/>
+        </StackLayout>
+       
     </VerticalStackLayout>
 </ContentPage>

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:crm ="clr-namespace:projAPP_MAUI.ViewModels"
              x:Class="projAPP_MAUI.View.PgProductMangement"
              Title="PgProductMangement">
-    <ContentPage.BindingContext>
-        <crm:CProductViewModels/>
-    </ContentPage.BindingContext>
+    <ScrollView>
     <VerticalStackLayout Background="#D1E9E9" >
         <Label 
             Text="商品詳情"
+            x:Name="lblCRUD"
             FontSize="35"
             HorizontalOptions="FillAndExpand"
             Background="#4E878C"
@@ -25,7 +23,7 @@
             x:Name="txtName"
             FontSize="25"
             HorizontalOptions="FillAndExpand"
-                Text="{Binding current.product,Mode=TwoWay}"/>
+                />
             <Label
             Text="廠商名稱"
             FontSize="25"
@@ -34,7 +32,7 @@
             x:Name="txtSupplier"
             FontSize="25"
             HorizontalOptions="FillAndExpand"
-                Text="{Binding current.supplier,Mode=TwoWay}"/>
+                />
             <Label
             Text="價格"
             FontSize="25"
@@ -43,7 +41,7 @@
             x:Name="txtPrice"
             FontSize="25"
             HorizontalOptions="FillAndExpand"
-                Text="{Binding current.price,Mode=TwoWay}"/>
+                />
             <Label
             Text="日期"
             FontSize="25"
@@ -52,7 +50,7 @@
             x:Name="txtDate"
             FontSize="25"
             HorizontalOptions="FillAndExpand"
-                Text="{Binding current.date,Mode=TwoWay}"/>
+                />
             <Label
             Text="最低出團人數"
             FontSize="25"
@@ -61,32 +59,24 @@
             x:Name="txtMin"
             FontSize="25"
             HorizontalOptions="FillAndExpand"
-                Text="{Binding current.min,Mode=TwoWay}"/>
+                />
             <Label
             Text="額滿人數"
             FontSize="25"
             HorizontalOptions="Start"/>
-            <Entry
+                <Entry
             x:Name="txtMax"
             FontSize="25"
             HorizontalOptions="FillAndExpand"
-                Text="{Binding current.max,Mode=TwoWay}"/>
-            <ImageButton Source="clear" Clicked="btnClear_Clicked"/>
-            <StackLayout Orientation="Vertical">
-                <StackLayout Orientation="Horizontal" >
-                    <ImageButton Source="first" HorizontalOptions="FillAndExpand" Clicked="btnFirst_Clicked"/>
-                    <ImageButton Source="previous" HorizontalOptions="FillAndExpand" Clicked="btnPrevious_Clicked_1"/>
-                    <ImageButton Source="next" HorizontalOptions="FillAndExpand" Clicked="btnNext_Clicked_2"/>
-                    <ImageButton Source="last" HorizontalOptions="FillAndExpand" Clicked="btnLast_Clicked_3"/>
-                    <ImageButton Source="search" HorizontalOptions="FillAndExpand" Clicked="btnSearch_Clicked_4"/>
-                    <ImageButton Source="menu" HorizontalOptions="FillAndExpand"  Clicked="btnList_Clicked"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal"  HorizontalOptions="End" Margin="5">
-                    <ImageButton Source="plus" HorizontalOptions="End" Clicked="btnAdd_Clicked"  />
-                    <ImageButton Source="delete" HorizontalOptions="End" Clicked="btnDelete_Clicked"/>
-                    <ImageButton Source="home" HorizontalOptions="End" Clicked="btnHome_Clicked" />
+                />
+                <StackLayout Orientation="Vertical">
+                <StackLayout x:Name="stacklayout新刪列" Orientation="Horizontal"  HorizontalOptions="FillAndExpand" Margin="5" IsVisible="true">
+                    <Button Background="#019858" x:Name="btn新增" Text="新增" FontSize="20" Clicked="btnAdd_Clicked" HorizontalOptions="FillAndExpand" Margin="5"/>
+                    <Button Background="#CE0000"  x:Name="btn刪除" Text="刪除" FontSize="20" Clicked="btnDelete_Clicked" HorizontalOptions="FillAndExpand" Margin="5"/>
+                    <Button Background="#007979"  x:Name="btn取消" Text="取消" FontSize="20" Clicked="btnCancel_Clicked" HorizontalOptions="FillAndExpand" Margin="5"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

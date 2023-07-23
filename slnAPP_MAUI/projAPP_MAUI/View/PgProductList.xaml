@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projAPP_MAUI.View.PgProductList"
              Title="PgProductList">
+    <ScrollView>
     <VerticalStackLayout Background="#D1E9E9">
         <Label 
             Text="商品總覽列表"
+            Padding="5"
+            x:Name="lblListName"
             FontSize="35"
             HorizontalOptions="FillAndExpand"
             Background="#4E878C"
@@ -13,6 +16,7 @@
             VerticalTextAlignment="Center" 
             HorizontalTextAlignment="Center" />
         <CollectionView
+            Margin="5"
             x:Name="cvList"
             SelectionChanged="cvList_SelectionChanged"
             SelectionMode="Single"
@@ -31,5 +35,8 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        <ImageButton x:Name="btnPlus" Source="plusred" Clicked="btnPlus_Clicked" />
+        <ImageButton Source="home" Clicked="btnHome_Clicked" Margin="0,10,0,0" />
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

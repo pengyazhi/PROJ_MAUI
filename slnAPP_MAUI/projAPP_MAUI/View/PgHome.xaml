@@ -5,7 +5,9 @@
              Title="PgHome">
     <VerticalStackLayout Background="#D1E9E9">
         <Label 
-            Text="Travel Date 廠商"
+            Text="誰登入"
+            x:Name="lblHome"
+            Padding="5"
             FontSize="35"
             HorizontalOptions="FillAndExpand"
             Background="#4E878C"
@@ -23,9 +25,10 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ImageButton Source="productlist" Clicked="btnProductList_Clicked"/>
-            <ImageButton Source="setting" Grid.Column="1" Clicked="btnProductMangement_Clicked"/>
-            
+            <ImageButton x:Name="商品總攬" Source="productlist" Clicked="btnProductList_Clicked"/>
+            <ImageButton x:Name="新刪商品" Source="editor" Grid.Column="1" Clicked="btnProductMangement_Clicked"/>
+            <ImageButton x:Name="btn修改密碼" Source="setting" Grid.Column="2" Clicked="btn修改密碼_Clicked"/>
+            <ImageButton x:Name="btn登出" Source="logout" Grid.Column="1" Grid.Row="2" Clicked="btn登出_Clicked"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
