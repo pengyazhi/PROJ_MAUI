@@ -36,6 +36,7 @@
             HorizontalOptions="FillAndExpand" 
                 />
             <Button Margin="20,20,20,0"  Text="登入" FontSize="25" Background="#007979" Clicked="btnLogin_Clicked"/>
+            <Button Margin="20,20,20,0" Text="Demo" FontSize="15" Background="#007979" Clicked="btnDemo_Clicked"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

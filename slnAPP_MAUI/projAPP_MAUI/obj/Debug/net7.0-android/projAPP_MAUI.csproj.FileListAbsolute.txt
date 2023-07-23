@@ -3931,6 +3931,8 @@ C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MA
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\editor.png
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\logout.png
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\loginbeach.gif
+C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\beachforlogin.jpg
+C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\loginback.png
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -3944,5 +3946,3 @@ C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MA
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\android\assets\System.Xml.dll
-C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\beachforlogin.jpg
-C:\Users\yazhi\Desktop\TravelDate\maui_for_proj\proj_maui_v1\PROJ_MAUI\slnAPP_MAUI\projAPP_MAUI\obj\Debug\net7.0-android\resizetizer\r\drawable\loginback.png

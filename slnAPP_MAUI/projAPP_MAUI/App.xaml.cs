@@ -18,7 +18,9 @@ public partial class App : Application
 	public bool isEditor { get; set; }
 	public bool isAddProduct { get; set; }
 
-	public App()
+	
+
+    public App()
 	{
 		InitializeComponent();
         MainPage = new NavigationPage( new PgLogin());

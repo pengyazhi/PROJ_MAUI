@@ -35,5 +35,11 @@ public partial class PgLogin : ContentPage
 		txtpassword.Text = "";
     }
 
-   
+    private void btnDemo_Clicked(object sender, EventArgs e)
+    {
+        txtaccount.Text = "Admin";
+        string folder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData); 
+        string path = Path.Combine(folder, "password.txt");
+        txtpassword.Text = File.ReadAllText(path, Encoding.UTF8);
+    }
 }

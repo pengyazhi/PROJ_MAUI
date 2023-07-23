@@ -1,3 +1,4 @@
+using projAPP_MAUI.WinUI;
 using System.Text;
 
 namespace projAPP_MAUI.View;
@@ -11,8 +12,9 @@ public partial class PgSettingEditor : ContentPage
 
     private async void btnConfirmPasswor_Clicked(object sender, EventArgs e)
     {
-        string folder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        string path = Path.Combine(folder, "password.txt");
+        
+        string folder=  Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        string path =  Path.Combine(folder, "password.txt");
         if (oldPassword.Text == File.ReadAllText(path, Encoding.UTF8) && oldPassword.Text != newPassword.Text)
         {
             File.WriteAllText(path, newPassword.Text, Encoding.UTF8);
